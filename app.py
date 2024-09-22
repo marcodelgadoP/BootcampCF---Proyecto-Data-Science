@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import numpy as np
 
 
 st.title("Análisis de Ventas de Videojuegos")
@@ -312,3 +313,5 @@ grafico_lineas = alt.Chart(ventas_por_año).mark_line().encode(
 )
 
 st.altair_chart(grafico_lineas)
+
+#------------------------------------------------------------
